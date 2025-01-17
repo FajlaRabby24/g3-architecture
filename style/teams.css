@@ -1,0 +1,42 @@
+
+
+.teams{
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+
+
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .teams{
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 576px) and  (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto; 
+    }
+}
